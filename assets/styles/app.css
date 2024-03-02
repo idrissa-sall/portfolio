@@ -1,3 +1,250 @@
+/*
+Color code:
+- prim: #A61515
+- prim:hover: #de2e2e
+- sec: #00005a
+- sec:hover: #0a0a84 
+text color: white, #C0C0C0
+*/
+
+
 body {
-    background-color: skyblue;
+    background-color: white;
+}
+
+/* couverture */
+.cover
+{
+    height: 80vh;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+/* icon dans le cover */
+.icon-row
+{
+    margin-top: 10px;
+}
+
+.cover-icon
+{
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.welcome-row
+{
+    margin-top: 120px;
+    color: white;
+}
+
+.cover_hello
+{
+    font-size: 35px;
+}
+
+.cover_name
+{
+    font-size: 110px;
+    margin: -30px 0 -10px 0;
+}
+
+.cover_job
+{
+    font-size: 25px
+}
+
+/* navLink */
+._nav-link
+{
+    font-weight: bold;
+    color: #000000;
+    font-size: 17px;
+    margin: 0 15px 0 15px;
+}
+
+/* barre de navigation */
+nav
+{
+    box-shadow: 2px 2px 2px #00005a;
+}
+
+.logo
+{
+    display: none;
+}
+
+/* style de la photo de profil */
+.profil-picture
+{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 45%;
+    top: -110%;
+    border-radius: 50%;
+    box-shadow: 1px 2px 2px #00005a;
+}
+
+/* about */
+
+#about
+{
+    /* margin-top: 80px; */
+    border-bottom: 1px solid #dee2e6;
+    color: #444;
+}
+
+#about .about-card
+{
+    padding: 55px 50px 0 50px;
+    border-right: 1px solid #dee2e6;
+}
+
+#about .about-card:last-child
+{
+    border-right: none;
+}
+
+.about-icon-row
+{
+    margin-top: 5px;
+}
+
+.about-icon
+{
+    font-size: 18px;
+    color: #A61515;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.about-icon:hover
+{
+    color: #de2e2e;
+}
+
+.domaine-img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.domaine-text
+{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.domaine-text:last-child
+{
+    border-bottom: none;
+}
+
+#course
+{
+    margin-top: 30px;
+}
+
+.underscore
+{
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #A61515;
+    margin-top: -5px;
+    margin-left: 4px;
+}
+
+/* button */
+.btn-prim
+{
+    color: white;
+    background-color: #A61515;
+}
+
+.btn-prim-rounded
+{
+    color: white;
+    background-color: #A61515;
+    border-radius: 30px;
+}
+
+.btn-prim-outlined
+{
+    color: #A61515;
+    background-color: none;
+    border-color: #A61515;
+}
+
+.btn-prim:hover, .btn-prim-rounded:hover, .btn-prim-outlined:hover
+{
+    background-color: #de2e2e;
+    color: white;
+}
+
+/* font */
+.fw-600
+{
+    font-weight: 600;
+}
+
+/* style spécifique aux grands écrans de taille intermédiaire */
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* barre de navigation */
+    ._nav-link
+    {
+        font-weight: bold;
+        color: #000000;
+        font-size: 17px;
+        margin: 0 5px 0 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* barre de navigation */
+    .logo
+    {
+        display: block;
+    }
+}
+
+/* style spécifique aux petits écrans */
+@media (max-width: 768px) {
+    /* couverture */
+    .icon-row
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cover_hello
+    {
+        font-size: 25px;
+    }
+
+    .cover_name
+    {
+        font-size: 70px;
+        margin: -15px 0 -5px 0;
+    }
+
+    .cover_job
+    {
+        font-size: 15px
+    }
+
+    /* barre de navigation */
+    .logo
+    {
+        display: block;
+    }
+
+    ._nav-link
+    {
+        margin: 0;
+    }
 }
