@@ -4,7 +4,7 @@ Color code:
 - prim:hover: #de2e2e
 - sec: #00005a
 - sec:hover: #0a0a84 
-text color: white, #C0C0C0
+text color: white
 */
 
 
@@ -58,15 +58,6 @@ body {
     font-size: 25px
 }
 
-/* navLink */
-._nav-link
-{
-    font-weight: bold;
-    color: #000000;
-    font-size: 17px;
-    margin: 0 15px 0 15px;
-}
-
 /* barre de navigation */
 nav
 {
@@ -78,16 +69,40 @@ nav
     display: none;
 }
 
+._nav-link
+{
+    font-weight: bold;
+    color: #000000;
+    font-size: 17px;
+    margin: 0 15px 0 15px;
+}
+
+.active
+{
+    color: #A61515 !important;
+}
+
 /* style de la photo de profil */
-.profil-picture
+#profil-picture
 {
     width: 170px;
     height: 170px;
     position: absolute;
-    left: 45%;
-    top: -110%;
+    left: 50%;
+    top: 50%;
     border-radius: 50%;
     box-shadow: 1px 2px 2px #00005a;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: .5s !important;
+    transition: .5s !important;
+}
+
+/* masque le texte avec le nom et prénom au chargement de la page */
+#navbar-name-job
+{
+    display: none;
 }
 
 /* about */
@@ -97,6 +112,7 @@ nav
     /* margin-top: 80px; */
     border-bottom: 1px solid #dee2e6;
     color: #444;
+    margin-bottom: 30px;
 }
 
 #about .about-card
@@ -144,19 +160,64 @@ nav
     border-bottom: none;
 }
 
-#course
+#profil
 {
-    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #444;
 }
+
+#profil .profil-card
+{
+    border-right: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+#profil .profil-card:last-child
+{
+    border-right: none;
+    padding: 10px;
+}
+
+#profil .profil-detail
+{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+#profil .profil-detail:last-child
+{
+    border-bottom: none;
+}
+
+.progress
+{
+    height: 11px;
+    font-size: 10px;
+}
+
+.progress-bar
+{
+    background-color: #A61515;
+}
+
+/* banner */
+.banner
+{
+    height: 200px;
+    color: white;
+    background-color: #00005a;
+}
+
+/* certification banner */
 
 .underscore
 {
     display: block;
     width: 40px;
-    height: 2px;
+    height: 1.5px;
     background-color: #A61515;
     margin-top: -5px;
-    margin-left: 4px;
+    margin-left: 2px;
 }
 
 /* button */
@@ -186,10 +247,37 @@ nav
     color: white;
 }
 
+/* color */
+.color-prim
+{
+    color: #de2e2e;
+}
+
 /* font */
 .fw-600
 {
     font-weight: 600;
+}
+
+.fs-i
+{
+    font-style: italic;
+}
+
+.fsize-p
+{
+    font-size: 13px;
+}
+
+/* visibility */
+.show-element
+{
+    opacity: 1;
+}
+
+.hidden-element
+{
+    opacity: 0;
 }
 
 /* style spécifique aux grands écrans de taille intermédiaire */
