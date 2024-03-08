@@ -162,8 +162,8 @@ nav
 
 #profil
 {
-    margin-bottom: 30px;
     color: #444;
+    margin-bottom: 30px;
 }
 
 #profil .profil-card
@@ -210,6 +210,29 @@ nav
 
 /* certification banner */
 
+/* services */
+#services
+{
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.service-card
+{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.service-card-icone
+{
+    font-size: 30px;
+    position: relative;
+    bottom: -20px;
+    left: 20px;
+    background-color: white;
+    color: #A61515;
+}
+
 .underscore
 {
     display: block;
@@ -250,7 +273,7 @@ nav
 /* color */
 .color-prim
 {
-    color: #de2e2e;
+    color: #A61515;
 }
 
 /* font */
