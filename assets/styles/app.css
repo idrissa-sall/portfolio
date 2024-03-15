@@ -189,27 +189,6 @@ nav
     border-bottom: none;
 }
 
-.progress
-{
-    height: 11px;
-    font-size: 10px;
-}
-
-.progress-bar
-{
-    background-color: #A61515;
-}
-
-/* banner */
-.banner
-{
-    height: 250px;
-    color: white;
-    background-color: #00005a;
-}
-
-/* certification banner */
-
 /* services */
 #services
 {
@@ -232,6 +211,44 @@ nav
     background-color: white;
     color: #A61515;
 }
+
+#portfolio
+{
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.portfolio-img
+{
+    width: 100%;
+}
+
+.project-col
+{
+    padding: 10px;
+}
+
+.progress
+{
+    height: 11px;
+    font-size: 10px;
+}
+
+.progress-bar
+{
+    background-color: #A61515;
+}
+
+/* banner */
+.banner
+{
+    height: 250px;
+    color: white;
+    background-color: #00005a;
+}
+
+/* certification banner */
+
 
 .underscore
 {
@@ -270,10 +287,41 @@ nav
     color: white;
 }
 
+.btn-sec
+{
+    color: white;
+    background-color: #00005a;
+}
+
+.btn-sec-rounded
+{
+    color: white;
+    background-color: #00005a;
+    border-radius: 30px;
+}
+
+.btn-sec-outlined
+{
+    color: #00005a;
+    background-color: none;
+    border-color: #00005a;
+}
+
+.btn-sec:hover, .btn-sec-rounded:hover, .btn-sec-outlined:hover
+{
+    background-color: #0a0a84;
+    color: white;
+}
+
 /* color */
 .color-prim
 {
     color: #A61515;
+}
+
+.color-sec
+{
+    color: #00005a;
 }
 
 /* font */
@@ -358,4 +406,5 @@ nav
     {
         margin: 0;
     }
+
 }
