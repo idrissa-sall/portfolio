@@ -22,6 +22,7 @@ $(function(){
             // masque la photo de profil
             profilPicture.addClass('hidden-element');
             profilPicture.removeClass('show-element');
+            profilPicture.css('display', 'none');
             // affiche le texte avec le nom et prénom
             navbarNameJob.css('display', 'block');
             navbarNameJob.addClass('show-element animate__animated animate__bounce');
@@ -30,6 +31,7 @@ $(function(){
             // affiche la photo de profil
             profilPicture.addClass('show-element');
             profilPicture.removeClass('hidden-element');
+            profilPicture.css('display', 'block');
             // masque le texte avec nom et prénom
             navbarNameJob.css('display', 'none');
             navbarNameJob.addClass('hidden-element');
@@ -63,4 +65,17 @@ $(function(){
         itemsTablet: [768,2],
         itemsMobile : [479,1]
     });
+    // end
+
+    // isotope filter
+    var $portfolioIsotope = $('.portfolio-isotope').isotope({
+        itemSelector: '.project-col',
+        layoutMode: 'fitRows'
+    });
+
+    $('.portfolio-button-row').on('click', 'button', function(){
+        var filterValue = $(this).attr('data-filter');
+        $portfolioIsotope.isotope({filter: filterValue});
+    });
+    // end
 });
