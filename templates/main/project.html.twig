@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{asset('assets/others/avatar.jpg')}}">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- owl-carousel css -->
+    <link rel="stylesheet" href="{{asset('owl-carousel/owl.carousel.css')}}">
+    <!-- owl-carousel theme -->
+    <link rel="stylesheet" href="{{asset('owl-carousel/owl.theme.css')}}">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous" defer></script>
+    <!-- bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+    <!-- owl-carousel js -->
+    <script src="{{asset('owl-carousel/owl.carousel.js')}}" defer></script>
+    <!-- animate css js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer />
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+    {% block importmap %}{{ importmap('app') }}{% endblock %}
+</head>
+
+<body>
+    <!-- navbar only for this page -->
+    {% include('_includes/_navbar.html.twig') %}
+    <!-- content of the page -->
+    <div class="container-fluid">
+        <!-- project name banner -->
+        {% include('_includes/project-page-banner.html.twig') %}
+
+        <!-- project details -->
+        <section class="container my-4">
+            <div class="row row-gap-2">
+                <!-- project images carousel -->
+                <div class="col-12 col-md-8">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://picsum.photos/500/300" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/500/300" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/500/300" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- project informations -->
+                <div class="col-12 col-md-4">
+                    <div class="card" style="padding: 10px;">
+                        <h3>Détails du projet</h3>
+                        <p>
+                            Catégorie: La catégorie <br>
+                            <!-- if project is web && is active -->
+                            Link: <a href="#" title="" style="color: #A61515">Project link</a>
+                        </p>
+                    </div>
+
+                    <h3 class="mt-3">Description</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illo. Cumque ratione cupiditate deleniti ea consectetur harum, fugiat sint mollitia reprehenderit! Tenetur at perspiciatis quia qui praesentium obcaecati dicta quo!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- footer -->
+    {% include('_includes/footer.html.twig') %}
+</body>
+
+</html>

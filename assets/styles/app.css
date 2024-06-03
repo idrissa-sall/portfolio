@@ -30,10 +30,12 @@ body {
     margin-top: 10px;
 }
 
-.cover-icon
+.cover-icon-link
 {
     font-size: 25px;
     margin-right: 20px;
+    color: white;
+    text-decoration: none;
 }
 
 .welcome-row
@@ -103,6 +105,19 @@ nav
 #navbar-name-job
 {
     display: none;
+}
+
+/* barre de navigation dans les autres pages */
+
+/* icons */
+._navbar-icon-link
+{
+    text-decoration: none;
+}
+
+._navbar-icon
+{
+    padding: 20px;
 }
 
 /* about */
@@ -241,6 +256,44 @@ nav
     color: #444;
 }
 
+/* contact */
+#contact
+{
+    color: #444;
+    margin-bottom: 30px;
+}
+
+#contact-right-col
+{
+    display: flex;
+    align-items: center;
+}
+
+.contact-right
+{
+    padding-left: 10px;
+}
+
+.contact-icon
+{
+    font-size: 25px;
+    color: #A61515;
+    margin-right: 15px;
+}
+
+.contact-link
+{
+    text-decoration: none;
+    color: #00005a;
+}
+
+/* footer */
+footer
+{
+    background-color: #00005a;
+    color: white;
+    height: 60px;
+}
 
 .progress
 {
@@ -263,6 +316,13 @@ nav
 
 /* certification banner */
 
+/* project page banner */
+#project-page-banner
+{
+    height: 250px;
+    color: white;
+    background-color: #00005a;
+}
 
 .underscore
 {
@@ -370,6 +430,7 @@ nav
     opacity: 0;
 }
 
+
 /* style spécifique aux grands écrans de taille intermédiaire */
 @media (min-width: 992px) and (max-width: 1200px) {
     /* barre de navigation */
@@ -388,6 +449,8 @@ nav
     {
         display: block;
     }
+
+    
 }
 
 /* style spécifique aux petits écrans */
@@ -426,4 +489,17 @@ nav
         margin: 0;
     }
 
+    /* contact */
+    #contact-right-col
+    {
+        display: block;
+    }
+
+    /* project page banner */
+    #project-page-banner
+    {
+        height: 150px;
+        color: white;
+        background-color: #00005a;
+    }
 }
